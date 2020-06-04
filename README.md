@@ -1,3 +1,5 @@
 # BloodBank_Management
-An android application that enables communication between the Blood Donors and Donee in order to request and donate blood via Blood bank
-# BloodBank
+An android application that enables communication between the Blood Donors and Donee.
+
+The application uses Firebase real time database for storing and retrieving data.
+

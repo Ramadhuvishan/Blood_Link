@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RequestActivity"
+    android:padding="12dp"
+    android:background="#CB0000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:padding="20dp">
+
+         <EditText
+            android:id="@+id/Rname"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectinput"
+            android:layout_margin="10dp"
+            android:hint=" Name"
+            android:inputType="textPersonName"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/Rdob"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectinput"
+            android:inputType="date"
+            android:layout_margin="10dp"
+            android:hint=" Date of birth (dd/mm/yyyy)"
+            android:layout_below="@+id/Rname"
+            android:layout_centerHorizontal="true"/>
+
+        <Spinner
+            android:id="@+id/Rblood"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectinput"
+            android:entries="@array/Bloods"
+            android:layout_margin="10dp"
+            android:layout_below="@id/Rdob"
+            android:layout_centerHorizontal="true" />
+
+         <EditText
+            android:id="@+id/Rmobile"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectinput"
+            android:layout_centerHorizontal="true"
+            android:inputType="phone"
+            android:layout_margin="10dp"
+            android:hint=" Mobile"
+            android:layout_below="@+id/Rblood"/>
+        <Spinner
+            android:id="@+id/Rcity"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectinput"
+            android:entries="@array/Cities"
+            android:selectAllOnFocus="true"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Rmobile"
+            />
+
+        <EditText
+            android:id="@+id/Raadhar"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectinput"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint=" Aadhar number"
+            android:layout_below="@+id/Rcity"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Rsubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="*By submitting, you accept that you are requesting blood for noble cause and for an authenticated person. In case if your request is found to illegal or not for a valid purpose, your act would be considered as violation to law and you would be subjected to legal actions and penalty."/>
+
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rsubmit"
+            android:background="#cb0000"
+            android:text="SUBMIT"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

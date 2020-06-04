@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <string name="request_blood">Request Blood</string>
+    <string name="admin">ADMIN</string>
+    <string name="donate">DONATE</string>
+    <string name="status">STATUS</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="nameerror">Enter a valid name</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="mobileerror">Enter a valid mobile</string>
+    <string name="dateerror">Enter a valid date</string>
+    <string-array name="Bloods">
+        <item>--select your blood type--</item>
+        <item>O Positive</item>
+        <item>A positive</item>
+        <item>B Positive</item>
+        <item>AB Positive</item>
+        <item>A1B Positive</item>
+        <item>0 Negative</item>
+        <item>A Negative</item>
+        <item>B Negative</item>
+        <item>AB Negative</item>
+        <item>A1B Negative</item>
+    </string-array>
+    <string-array name="Cities">
+        <item>--select your city--</item>
+        <item>Ariyalur</item>
+        <item>Chengalpet</item>
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Cuddalore</item>
+        <item>Dharmapuri</item>
+        <item>Dindigul</item>
+        <item>Erode</item>
+        <item>Kallakurichi</item>
+        <item>Kanchipuram</item>
+        <item>Karur</item>
+        <item>Krishnagiri</item>
+        <item>Madurai</item>
+        <item>Nagapattinam</item>
+        <item>Kanyakumari</item>
+        <item>Namakkal</item>
+        <item>Nilgiri(Ootacamund)</item>
+        <item>Perambalur</item>
+        <item>Pudukottai</item>
+        <item>Ramanathapuram</item>
+        <item>Ranipet</item>
+        <item>Salem</item>
+        <item>Sivagangai</item>
+        <item>Tenkasi</item>
+        <item>Thanjavur</item>
+        <item>Theni</item>
+        <item>Thirunelveli</item>
+        <item>Thiruvallur</item>
+        <item>Thiruvannamalai</item>
+        <item>Thiruvarur</item>
+        <item>Tirupattur</item>
+        <item>Tiruppur</item>
+        <item>Trichirappalli</item>
+        <item>Tuticorin</item>
+        <item>Vellore</item>
+        <item>Vilupuram</item>
+        <item>Virudhunagar</item>
+    </string-array>
+    <string name="title_activity_donate">donate</string>
+</resources>

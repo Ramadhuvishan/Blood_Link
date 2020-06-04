@@ -1,0 +1,4 @@
+#Thu May 28 11:56:40 IST 2020
+base.0=/home/pradeep/AndroidStudioProjects/BloodBank/app/build/intermediates/dex/release/mergeDexRelease/out
+path.0=classes.dex
+renamed.0=classes.dex

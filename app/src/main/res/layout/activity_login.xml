@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".DonorLogin"
+    android:background="#cb0000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:background="#f6f6f6"
+        >
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/existinguser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Existing user?"
+                android:textColor="#cb00"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rectinput"
+                android:hint=" Login ID"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:textColor="#ff0000"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/existinguser"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textColor="#ff0000"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/username"
+                />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:background="#cb0000"
+                android:text="Sign IN "
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                />
+
+            <TextView
+                android:id="@+id/newuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New user?"
+                android:layout_centerHorizontal="true"
+                android:textColor="#cb00"
+                android:layout_below="@+id/login"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:hint=" Name"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:textColor="#ff0000"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/newuser"
+                />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:hint=" Date of Birth (dd/mm/yyyy)"
+                android:inputType="date"
+                android:selectAllOnFocus="true"
+                android:textColor="#ff0000"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/name"
+                />
+
+            <Spinner
+                android:id="@+id/bloodgroup"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:entries="@array/Bloods"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/dob"
+                />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:hint=" Mobile"
+                android:inputType="phone"
+                android:selectAllOnFocus="true"
+                android:textColor="#ff0000"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/bloodgroup"
+                />
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:entries="@array/Cities"
+                android:selectAllOnFocus="true"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mobile"
+                />
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textColor="#ff0000"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/city"
+                />
+
+            <EditText
+                android:id="@+id/c_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectinput"
+                android:hint=" Confirm Password"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textColor="#ff0000"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/password2"
+                />
+
+            <Button
+                android:id="@+id/newDonor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#CB0000"
+                android:text="REGISTER"
+                android:textColor="#fff"
+                android:layout_below="@+id/c_password"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

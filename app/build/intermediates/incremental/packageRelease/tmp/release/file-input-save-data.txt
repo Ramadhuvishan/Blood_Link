@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu May 28 11:56:41 IST 2020
+0.baseType=DIRECTORY
+0.base=/home/pradeep/AndroidStudioProjects/BloodBank/app/build/intermediates/dex/release/mergeDexRelease/out
+0.path=classes.dex
+0.set=DEX
+count=1

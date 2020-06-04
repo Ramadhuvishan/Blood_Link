@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="#cb0000"
+
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/blood"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
+
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/request"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="Request"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/donate"/>
+        <Button
+            android:id="@+id/donate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#137F01"
+            android:text="@string/donate"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/status"-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#cb0000"-->
+            <!--android:text="@string/status"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="50dp"/>-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

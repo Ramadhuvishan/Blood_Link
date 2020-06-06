@@ -25,6 +25,7 @@ public class DonorLogin extends AppCompatActivity implements View.OnClickListene
     Spinner blood,city;
     SQLiteDatabase db;
     static String n,p,m;
+    String userName,pass;
     DatabaseReference rootRef,demoRef,userRef,bloodRef,loginRef;
     private AwesomeValidation awesomeValidation;
     @Override
@@ -93,6 +94,8 @@ public class DonorLogin extends AppCompatActivity implements View.OnClickListene
             if (awesomeValidation.validate() && validatePassword(pwd)) {
                 Cursor c = db.rawQuery("SELECT Name,password FROM donor WHERE Name = '" + uname.getText().toString() + "'", null);
                 if (c != null && c.moveToFirst()) {
+                    userName = demoRef.child("dname").getValue().toString();
+                    pass = demoRef.child("dpass").getValue().toString();
                     p = c.getString(c.getColumnIndex("password"));
                     m = c.getString(c.getColumnIndex("Name"));
                     c.close();
